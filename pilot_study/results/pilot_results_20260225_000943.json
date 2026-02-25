@@ -1,0 +1,77 @@
+[
+  {
+    "case": "case1_use_after_free",
+    "description": "Use-After-Free via raw pointer",
+    "original_error": "use_after_free",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "pub fn get_value() -> i32 {\n    let val = Box::new(42);\n    *val\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  },
+  {
+    "case": "case2_out_of_bounds",
+    "description": "Out-of-bounds pointer arithmetic",
+    "original_error": "out_of_bounds",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "pub fn sum_array(data: &[i32]) -> i32 {\n    let ptr = data.as_ptr();\n    let mut sum = 0i32;\n    for i in 0..data.len() {\n        sum += unsafe { *ptr.add(i) };\n    }\n    sum\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  },
+  {
+    "case": "case3_uninitialized",
+    "description": "Uninitialized memory read",
+    "original_error": "uninitialized_memory",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "use std::mem::MaybeUninit;\n\npub fn create_array() -> [i32; 5] {\n    let mut arr: [MaybeUninit<i32>; 5] = [MaybeUninit::uninit(); 5];\n\n    for i in 0..5 {\n        if i < 3 {\n            arr[i] = MaybeUninit::new(i as i32 * 10);\n        } else {\n            arr[i] = MaybeUninit::new(0);\n        }\n    }\n\n    unsafe { std::mem::transmute(arr) }\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  },
+  {
+    "case": "case4_stacked_borrows",
+    "description": "Stacked Borrows violation",
+    "original_error": "stacked_borrows",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "pub fn increment_through_alias(x: &mut i32) -> i32 {\n    *x += 1;\n    *x\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  },
+  {
+    "case": "case5_dangling_ref",
+    "description": "Dangling reference via Vec realloc",
+    "original_error": "use_after_free",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "pub fn push_and_read() -> i32 {\n    let mut v = vec![1, 2, 3];\n    let first = v[0];\n    for i in 0..100 {\n        v.push(i);\n    }\n    first\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  }
+]

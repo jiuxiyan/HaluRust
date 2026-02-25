@@ -1,0 +1,17 @@
+[
+  {
+    "case": "case1_use_after_free",
+    "description": "Use-After-Free via raw pointer",
+    "original_error": "use_after_free",
+    "succeeded": true,
+    "iterations": 1,
+    "final_code": "pub fn get_value() -> i32 {\n    let val = Box::new(42);\n    *val\n}",
+    "attempts": [
+      {
+        "iteration": 1,
+        "status": "miri_passed",
+        "miri_summary": "Miri: PASSED (no UB detected)"
+      }
+    ]
+  }
+]
