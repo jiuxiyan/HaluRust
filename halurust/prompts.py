@@ -65,11 +65,14 @@ and a fix plan, you must produce the corrected Rust code.
 
 Rules:
 - Output ONLY the complete fixed Rust source code, wrapped in ```rust ... ```
-- Do NOT include the test code — only the library/source code
-- Preserve function signatures and the public API
-- Make minimal changes to fix the UB
-- The code must compile and pass Miri checks
+- Include the complete file including the main() function
+- Preserve the overall program structure and intent
+- Make minimal changes to fix the UB while keeping the code meaningful
+- The code must compile and pass Miri checks (no Undefined Behavior)
 - Do NOT add explanations outside the code block
+- Do NOT include miri test annotations (//~ ERROR, //@compile-flags, etc.)
+- If the original uses unsafe code incorrectly, replace with safe alternatives where possible
+- If unsafe is truly needed, ensure it is sound
 """
 
 FIX_AGENT_USER = """\

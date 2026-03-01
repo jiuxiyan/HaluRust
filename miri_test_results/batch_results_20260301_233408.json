@@ -1,0 +1,160 @@
+{
+  "timestamp": "20260301_233408",
+  "model": "gemini-3-flash-preview",
+  "max_iterations": 3,
+  "total_files": 15,
+  "success_count": 15,
+  "total_time_seconds": 1678.6,
+  "results": [
+    {
+      "file": "alloc__reallocate-dangling.rs",
+      "original_error_type": "use_after_free",
+      "original_error_msg": "error: Undefined Behavior: memory access failed: alloc380 has been freed, so this pointer is dangling",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 28.1,
+      "fixed_file": "miri_test_results/fixed_alloc__reallocate-dangling.rs"
+    },
+    {
+      "file": "alloc__stack_free.rs",
+      "original_error_type": "unknown",
+      "original_error_msg": "error: Undefined Behavior: deallocating alloc298, which is stack variable memory, using Rust heap deallocation operation",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 12.3,
+      "fixed_file": "miri_test_results/fixed_alloc__stack_free.rs"
+    },
+    {
+      "file": "both_borrows__aliasing_mut1.rs",
+      "original_error_type": "tree_borrows",
+      "original_error_msg": "error: Undefined Behavior: write access through <643> at alloc309[0x0] is forbidden",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 22.3,
+      "fixed_file": "miri_test_results/fixed_both_borrows__aliasing_mut1.rs"
+    },
+    {
+      "file": "both_borrows__illegal_write1.rs",
+      "original_error_type": "tree_borrows",
+      "original_error_msg": "error: Undefined Behavior: write access through <698> at alloc385[0x0] is forbidden",
+      "succeeded": true,
+      "iterations": 2,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 432.6,
+      "fixed_file": "miri_test_results/fixed_both_borrows__illegal_write1.rs"
+    },
+    {
+      "file": "box-cell-alias.rs",
+      "original_error_type": "dangling_reference",
+      "original_error_msg": "error: Undefined Behavior: trying to retag from <729> for SharedReadWrite permission at alloc389[0x0], but that tag does not exist in the borrow stack for this location",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 46.7,
+      "fixed_file": "miri_test_results/fixed_box-cell-alias.rs"
+    },
+    {
+      "file": "dangling_pointers__dangling_pointer_deref.rs",
+      "original_error_type": "use_after_free",
+      "original_error_msg": "error: Undefined Behavior: memory access failed: alloc375 has been freed, so this pointer is dangling",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 326.3,
+      "fixed_file": "miri_test_results/fixed_dangling_pointers__dangling_pointer_deref.rs"
+    },
+    {
+      "file": "dangling_pointers__out_of_bounds_project.rs",
+      "original_error_type": "out_of_bounds",
+      "original_error_msg": "error: Undefined Behavior: in-bounds pointer arithmetic failed: attempting to offset pointer by 8 bytes, but got alloc298 which is only 4 bytes from the end of the allocation",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 15.4,
+      "fixed_file": "miri_test_results/fixed_dangling_pointers__out_of_bounds_project.rs"
+    },
+    {
+      "file": "memleak_rc.rs",
+      "original_error_type": "memory_leak",
+      "original_error_msg": "error: memory leaked: alloc396 (Rust heap, size: 32, align: 8), allocated here:",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 467.9,
+      "fixed_file": "miri_test_results/fixed_memleak_rc.rs"
+    },
+    {
+      "file": "reading_half_a_pointer.rs",
+      "original_error_type": "dangling_reference",
+      "original_error_msg": "error: Undefined Behavior: memory access failed: attempting to access 1 byte, but got 0x8371c00[noalloc] which is a dangling pointer (it has no provenance)",
+      "succeeded": true,
+      "iterations": 2,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 104.3,
+      "fixed_file": "miri_test_results/fixed_reading_half_a_pointer.rs"
+    },
+    {
+      "file": "stacked_borrows__deallocate_against_protector1.rs",
+      "original_error_type": "unknown",
+      "original_error_msg": "error: Undefined Behavior: deallocating while item [Unique for <775>] is strongly protected",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 17.9,
+      "fixed_file": "miri_test_results/fixed_stacked_borrows__deallocate_against_protector1.rs"
+    },
+    {
+      "file": "tree_borrows__alternate-read-write.rs",
+      "original_error_type": "tree_borrows",
+      "original_error_msg": "error: Undefined Behavior: write access through <639> at alloc309[0x0] is forbidden",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 59.8,
+      "fixed_file": "miri_test_results/fixed_tree_borrows__alternate-read-write.rs"
+    },
+    {
+      "file": "unaligned_pointers__alignment.rs",
+      "original_error_type": "invalid_alignment",
+      "original_error_msg": "error: Undefined Behavior: accessing memory based on pointer with alignment 1, but alignment 4 is required",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 15.7,
+      "fixed_file": "miri_test_results/fixed_unaligned_pointers__alignment.rs"
+    },
+    {
+      "file": "uninit__padding-enum.rs",
+      "original_error_type": "uninitialized_memory",
+      "original_error_msg": "error: Undefined Behavior: reading memory at alloc315[0x8..0x9], but memory is uninitialized at [0x8..0x9], and this operation requires initialized memory",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 47.2,
+      "fixed_file": "miri_test_results/fixed_uninit__padding-enum.rs"
+    },
+    {
+      "file": "uninit__uninit_alloc_diagnostic_with_provenance.rs",
+      "original_error_type": "uninitialized_memory",
+      "original_error_msg": "error: Undefined Behavior: reading memory at alloc381[0x0..0x8], but memory is uninitialized at [0x4..0x8], and this operation requires initialized memory",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 63.4,
+      "fixed_file": "miri_test_results/fixed_uninit__uninit_alloc_diagnostic_with_provenance.rs"
+    },
+    {
+      "file": "validity__cast_fn_ptr_invalid_callee_arg.rs",
+      "original_error_type": "invalid_deref",
+      "original_error_msg": "error: Undefined Behavior: constructing invalid value: encountered a null reference",
+      "succeeded": true,
+      "iterations": 1,
+      "final_status": "miri_passed",
+      "elapsed_seconds": 18.7,
+      "fixed_file": "miri_test_results/fixed_validity__cast_fn_ptr_invalid_callee_arg.rs"
+    }
+  ]
+}
