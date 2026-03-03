@@ -1,0 +1,6 @@
+{
+  "name": "intptrcast_alignment_check.rs",
+  "category": "unaligned_pointers",
+  "error_type": "invalid_alignment",
+  "error_message": "error: Undefined Behavior: accessing memory based on pointer with alignment 1, but alignment 2 is required"
+}

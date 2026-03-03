@@ -1,0 +1,6 @@
+{
+  "name": "weak_uninit.rs",
+  "category": "weak_memory",
+  "error_type": "uninitialized_memory",
+  "error_message": "error: Undefined Behavior: using uninitialized data, but this operation requires initialized memory"
+}

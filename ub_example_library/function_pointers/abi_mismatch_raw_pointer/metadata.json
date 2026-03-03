@@ -1,0 +1,6 @@
+{
+  "name": "abi_mismatch_raw_pointer.rs",
+  "category": "function_pointers",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: calling a function whose parameter #1 has type *const [i32] passing argument of type *const i32"
+}

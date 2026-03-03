@@ -1,0 +1,6 @@
+{
+  "name": "uninit_raw_ptr.rs",
+  "category": "validity",
+  "error_type": "uninitialized_memory",
+  "error_message": "error: Undefined Behavior: constructing invalid value at [0]: encountered uninitialized memory, but expected a raw pointer"
+}

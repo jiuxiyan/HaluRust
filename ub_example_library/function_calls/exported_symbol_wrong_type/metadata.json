@@ -1,0 +1,6 @@
+{
+  "name": "exported_symbol_wrong_type.rs",
+  "category": "function_calls",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: attempt to call an exported symbol that is not defined as a function"
+}

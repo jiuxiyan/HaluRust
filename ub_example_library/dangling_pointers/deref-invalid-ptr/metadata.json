@@ -1,0 +1,6 @@
+{
+  "name": "deref-invalid-ptr.rs",
+  "category": "dangling_pointers",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: pointer not dereferenceable: pointer must be dereferenceable for 4 bytes, but got 0x10[noalloc] which is a dangling pointer (it has no provenance)"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "shim_arg_size.rs",
+  "category": "shims",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: scalar size mismatch: expected 4 bytes but got 1 bytes instead"
+}

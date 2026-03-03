@@ -1,0 +1,6 @@
+{
+  "name": "unaligned_ptr2.rs",
+  "category": "unaligned_pointers",
+  "error_type": "invalid_alignment",
+  "error_message": "error: Undefined Behavior: accessing memory based on pointer with alignment 1, but alignment 4 is required"
+}

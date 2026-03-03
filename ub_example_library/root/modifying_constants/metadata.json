@@ -1,0 +1,6 @@
+{
+  "name": "modifying_constants.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: writing to alloc2 which is read-only"
+}

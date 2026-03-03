@@ -1,0 +1,6 @@
+{
+  "name": "invalid_bool_op.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: interpreting an invalid 8-bit value as a bool: 0x02"
+}

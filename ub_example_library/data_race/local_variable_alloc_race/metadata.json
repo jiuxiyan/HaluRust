@@ -1,0 +1,6 @@
+{
+  "name": "local_variable_alloc_race.rs",
+  "category": "data_race",
+  "error_type": "data_race",
+  "error_message": "error: Undefined Behavior: Data race detected between (1) creating a new allocation on thread `main` and (2) non-atomic write on thread `unnamed-1` at alloc1127"
+}

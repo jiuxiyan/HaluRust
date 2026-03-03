@@ -1,0 +1,6 @@
+{
+  "name": "unchecked_mul1.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: arithmetic overflow in `unchecked_mul`"
+}

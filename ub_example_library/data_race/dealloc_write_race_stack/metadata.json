@@ -1,0 +1,6 @@
+{
+  "name": "dealloc_write_race_stack.rs",
+  "category": "data_race",
+  "error_type": "data_race",
+  "error_message": "error: Undefined Behavior: Data race detected between (1) non-atomic write on thread `unnamed-2` and (2) deallocation on thread `unnamed-1` at alloc1795"
+}

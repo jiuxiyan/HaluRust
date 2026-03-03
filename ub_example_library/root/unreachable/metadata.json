@@ -1,0 +1,6 @@
+{
+  "name": "unreachable.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: entering unreachable code"
+}

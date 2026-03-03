@@ -1,0 +1,6 @@
+{
+  "name": "nonzero.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered 0, but expected something greater or equal to 1"
+}

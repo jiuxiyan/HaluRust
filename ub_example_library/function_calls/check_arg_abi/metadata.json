@@ -1,0 +1,6 @@
+{
+  "name": "check_arg_abi.rs",
+  "category": "function_calls",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: calling a function with calling convention \"C\" using caller calling convention \"Rust\""
+}

@@ -1,0 +1,6 @@
+{
+  "name": "exported_symbol_abi_mismatch.rs",
+  "category": "function_calls",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: calling a function with calling convention \"Rust\" using calling convention \"C\""
+}

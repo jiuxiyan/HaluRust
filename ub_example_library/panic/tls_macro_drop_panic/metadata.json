@@ -1,0 +1,6 @@
+{
+  "name": "tls_macro_drop_panic.rs",
+  "category": "panic",
+  "error_type": "unknown",
+  "error_message": "fatal runtime error: thread local panicked on drop, aborting"
+}

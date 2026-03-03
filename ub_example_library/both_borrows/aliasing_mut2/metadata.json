@@ -1,0 +1,6 @@
+{
+  "name": "aliasing_mut2.rs",
+  "category": "both_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: write access through <648> at alloc309[0x0] is forbidden"
+}

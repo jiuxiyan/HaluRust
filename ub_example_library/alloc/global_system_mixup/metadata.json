@@ -1,0 +1,6 @@
+{
+  "name": "global_system_mixup.rs",
+  "category": "alloc",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: deallocating alloc388, which is Rust heap memory, using C heap deallocation operation"
+}

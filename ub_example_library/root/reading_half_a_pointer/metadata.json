@@ -1,0 +1,6 @@
+{
+  "name": "reading_half_a_pointer.rs",
+  "category": "root",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: memory access failed: attempting to access 1 byte, but got 0x8371c00[noalloc] which is a dangling pointer (it has no provenance)"
+}

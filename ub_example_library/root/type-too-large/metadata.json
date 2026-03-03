@@ -1,0 +1,6 @@
+{
+  "name": "type-too-large.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: post-monomorphization error: values of the type `[u8; 2305843011361177600]` are too big for the target architecture"
+}

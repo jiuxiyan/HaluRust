@@ -1,0 +1,6 @@
+{
+  "name": "issue-miri-1050-1.rs",
+  "category": "both_borrows",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: pointer not dereferenceable: pointer must be dereferenceable for 4 bytes, but got alloc375 which is only 2 bytes from the end of the allocation"
+}

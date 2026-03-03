@@ -1,0 +1,6 @@
+{
+  "name": "dangling_ref3.rs",
+  "category": "validity",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered a dangling reference (use-after-free)"
+}

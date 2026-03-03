@@ -1,0 +1,6 @@
+{
+  "name": "uninit_byte_read.rs",
+  "category": "uninit",
+  "error_type": "uninitialized_memory",
+  "error_message": "error: Undefined Behavior: reading memory at alloc414[0x5..0x6], but memory is uninitialized at [0x5..0x6], and this operation requires initialized memory"
+}

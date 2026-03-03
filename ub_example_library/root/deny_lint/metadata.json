@@ -1,0 +1,6 @@
+{
+  "name": "deny_lint.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: struct `Foo` is never constructed"
+}

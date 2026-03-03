@@ -1,0 +1,6 @@
+{
+  "name": "return_invalid_mut.rs",
+  "category": "tree_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: write access through <644> at alloc309[0x4] is forbidden"
+}

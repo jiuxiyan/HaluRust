@@ -1,0 +1,6 @@
+{
+  "name": "alias_through_mutation.rs",
+  "category": "both_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: read access through <648> at alloc311[0x0] is forbidden"
+}

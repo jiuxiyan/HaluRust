@@ -1,0 +1,6 @@
+{
+  "name": "shared_rw_borrows_are_weak2.rs",
+  "category": "stacked_borrows",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: attempting a read access using <731> at alloc313[0x8], but that tag does not exist in the borrow stack for this location"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "tls_static_dealloc.rs",
+  "category": "tls",
+  "error_type": "use_after_free",
+  "error_message": "error: Undefined Behavior: memory access failed: alloc1691 has been freed, so this pointer is dangling"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "return_invalid_mut.rs",
+  "category": "stacked_borrows",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: trying to retag from <670> for Unique permission at alloc309[0x4], but that tag does not exist in the borrow stack for this location"
+}

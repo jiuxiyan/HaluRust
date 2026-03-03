@@ -1,0 +1,6 @@
+{
+  "name": "static_memory_modification.rs",
+  "category": "stacked_borrows",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: writing to alloc1 which is read-only"
+}

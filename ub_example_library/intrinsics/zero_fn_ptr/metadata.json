@@ -1,0 +1,6 @@
+{
+  "name": "zero_fn_ptr.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered a null function pointer"
+}

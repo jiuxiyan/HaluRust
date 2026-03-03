@@ -1,0 +1,6 @@
+{
+  "name": "promise_alignment_zero.rs",
+  "category": "unaligned_pointers",
+  "error_type": "unknown",
+  "error_message": "error: couldn't read `src/../../utils/mod.rs`: No such file or directory (os error 2)"
+}

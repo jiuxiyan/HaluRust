@@ -1,0 +1,6 @@
+{
+  "name": "unescaped_static.rs",
+  "category": "stacked_borrows",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: attempting a read access using <667> at alloc1[0x1], but that tag does not exist in the borrow stack for this location"
+}

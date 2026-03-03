@@ -1,0 +1,6 @@
+{
+  "name": "parent_read_freezes_raw_mut.rs",
+  "category": "tree_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: write access through <637> at alloc311[0x0] is forbidden"
+}

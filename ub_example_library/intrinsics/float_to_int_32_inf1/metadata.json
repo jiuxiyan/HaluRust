@@ -1,0 +1,6 @@
+{
+  "name": "float_to_int_32_inf1.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: `float_to_int_unchecked` intrinsic called on +Inf_f32 which cannot be represented in target type `i32`"
+}

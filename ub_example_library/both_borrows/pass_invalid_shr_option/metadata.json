@@ -1,0 +1,6 @@
+{
+  "name": "pass_invalid_shr_option.rs",
+  "category": "both_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: reborrow through <640> at alloc309[0x0] is forbidden"
+}

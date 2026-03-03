@@ -2,3 +2,7 @@
 .env
 framework.png
 rrb+halurust_1.drawio.svg
+selected_tests.json
+miri_tests/
+miri_test_results/
+rag_build_progress.json

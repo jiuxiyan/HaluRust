@@ -1,0 +1,6 @@
+{
+  "name": "outdated_local.rs",
+  "category": "both_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: read access through <637> at alloc313[0x0] is forbidden"
+}

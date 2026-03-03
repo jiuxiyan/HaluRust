@@ -1,0 +1,6 @@
+{
+  "name": "cc-mismatch.rs",
+  "category": "tail_calls",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: calling a function with calling convention \"C\" using calling convention \"Rust\""
+}

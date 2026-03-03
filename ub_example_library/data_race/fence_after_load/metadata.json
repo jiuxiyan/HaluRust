@@ -1,0 +1,6 @@
+{
+  "name": "fence_after_load.rs",
+  "category": "data_race",
+  "error_type": "data_race",
+  "error_message": "error: Undefined Behavior: Data race detected between (1) non-atomic write on thread `unnamed-1` and (2) non-atomic write on thread `main` at alloc1"
+}

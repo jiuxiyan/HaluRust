@@ -1,0 +1,6 @@
+{
+  "name": "read_only_atomic_cmpxchg.rs",
+  "category": "concurrency",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: atomic store and read-modify-write operations cannot be performed on read-only memory"
+}

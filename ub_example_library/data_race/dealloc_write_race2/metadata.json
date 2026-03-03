@@ -1,0 +1,6 @@
+{
+  "name": "dealloc_write_race2.rs",
+  "category": "data_race",
+  "error_type": "use_after_free",
+  "error_message": "error: Undefined Behavior: memory access failed: alloc336 has been freed, so this pointer is dangling"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "exact_div1.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: calculating the remainder with a divisor of zero"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "strongly-protected.rs",
+  "category": "tree_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: deallocation through <754> at alloc385[0x0] is forbidden"
+}

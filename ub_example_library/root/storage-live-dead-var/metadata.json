@@ -1,0 +1,6 @@
+{
+  "name": "storage-live-dead-var.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: accessing a dead local variable"
+}

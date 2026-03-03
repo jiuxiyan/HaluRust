@@ -1,0 +1,6 @@
+{
+  "name": "invalid_fnptr_null.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered a null function pointer"
+}

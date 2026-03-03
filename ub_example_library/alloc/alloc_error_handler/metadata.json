@@ -1,0 +1,6 @@
+{
+  "name": "alloc_error_handler.rs",
+  "category": "alloc",
+  "error_type": "unknown",
+  "error_message": "error: abnormal termination: the program aborted execution"
+}

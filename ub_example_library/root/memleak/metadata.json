@@ -1,0 +1,6 @@
+{
+  "name": "memleak.rs",
+  "category": "root",
+  "error_type": "memory_leak",
+  "error_message": "error: memory leaked: alloc385 (Rust heap, size: 4, align: 4), allocated here:"
+}

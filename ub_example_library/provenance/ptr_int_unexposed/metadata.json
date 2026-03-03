@@ -1,0 +1,6 @@
+{
+  "name": "ptr_int_unexposed.rs",
+  "category": "provenance",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: memory access failed: attempting to access 4 bytes, but got 0x83728[noalloc] which is a dangling pointer (it has no provenance)"
+}

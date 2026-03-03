@@ -1,0 +1,6 @@
+{
+  "name": "transmute-pair-uninit.rs",
+  "category": "uninit",
+  "error_type": "uninitialized_memory",
+  "error_message": "error: Undefined Behavior: reading memory at alloc312[0x9..0xa], but memory is uninitialized at [0x9..0xa], and this operation requires initialized memory"
+}

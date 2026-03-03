@@ -1,0 +1,6 @@
+{
+  "name": "simd_masked_load_vector_misaligned.rs",
+  "category": "intrinsics",
+  "error_type": "invalid_alignment",
+  "error_message": "error: Undefined Behavior: accessing memory with alignment 4, but alignment 16 is required"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "deref-in-pattern.rs",
+  "category": "match",
+  "error_type": "dangling_reference",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered a dangling reference (use-after-free)"
+}

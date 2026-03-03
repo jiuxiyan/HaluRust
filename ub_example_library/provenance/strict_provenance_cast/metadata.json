@@ -1,0 +1,6 @@
+{
+  "name": "strict_provenance_cast.rs",
+  "category": "provenance",
+  "error_type": "unknown",
+  "error_message": "error: unsupported operation: integer-to-pointer casts and `ptr::with_exposed_provenance` are not supported with `-Zmiri-strict-provenance`"
+}

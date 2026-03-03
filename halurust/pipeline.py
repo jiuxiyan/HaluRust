@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 from rich.console import Console
 from rich.panel import Panel
 
@@ -16,8 +18,11 @@ from .rag import UBExampleLibrary
 console = Console()
 
 
+_DEFAULT_LIBRARY_PATH = str(Path(__file__).parent.parent / "ub_example_library")
+
+
 class HaluRustPipeline:
-    def __init__(self, config: HaluRustConfig, mock: bool = False):
+    def __init__(self, config: HaluRustConfig, mock: bool = False, library_path: str | None = None):
         self._config = config
         if mock:
             from .mock_llm import MockLLMClient
@@ -28,7 +33,14 @@ class HaluRustPipeline:
         self._fix_agent = FixAgent(llm)
         self._hallucination_agent = HallucinationAgent(llm)
         self._critic = Critic(config)
-        self._rag = UBExampleLibrary()
+
+        lib_path = library_path or _DEFAULT_LIBRARY_PATH
+        if Path(lib_path).exists():
+            self._rag = UBExampleLibrary(lib_path)
+            if self._rag.size > 0:
+                console.print(f"[dim]RAG library loaded: {self._rag.size} examples[/dim]")
+        else:
+            self._rag = UBExampleLibrary()
 
     def run(self, source_code: str, test_code: str) -> FixHistory:
         console.print(Panel("[bold]HaluRust Pipeline[/bold]", style="cyan"))

@@ -1,0 +1,6 @@
+{
+  "name": "cast_fn_ptr_invalid_caller_arg.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value at .0: encountered 0, but expected something greater or equal to 1"
+}

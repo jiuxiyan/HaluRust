@@ -1,0 +1,6 @@
+{
+  "name": "null_pointer_write.rs",
+  "category": "dangling_pointers",
+  "error_type": "invalid_deref",
+  "error_message": "error: Undefined Behavior: memory access failed: attempting to access 4 bytes, but got null pointer"
+}

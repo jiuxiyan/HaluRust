@@ -1,0 +1,6 @@
+{
+  "name": "fast_math_first.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: `frem_fast` intrinsic called with non-finite value as first parameter"
+}

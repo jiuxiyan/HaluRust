@@ -1,0 +1,6 @@
+{
+  "name": "simd-div-overflow.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: overflow in signed division (dividing MIN by -1)"
+}

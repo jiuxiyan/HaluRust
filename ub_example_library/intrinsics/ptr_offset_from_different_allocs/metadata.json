@@ -1,0 +1,6 @@
+{
+  "name": "ptr_offset_from_different_allocs.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: `ptr_offset_from` called on two different pointers that are not both derived from the same allocation"
+}

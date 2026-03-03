@@ -1,0 +1,6 @@
+{
+  "name": "single_exposed_foreign.rs",
+  "category": "tree_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: read access through <641> at alloc309[0x0] is forbidden"
+}

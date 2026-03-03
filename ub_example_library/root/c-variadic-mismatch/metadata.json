@@ -1,0 +1,6 @@
+{
+  "name": "c-variadic-mismatch.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: unsupported operation: calling a c-variadic function is not supported"
+}

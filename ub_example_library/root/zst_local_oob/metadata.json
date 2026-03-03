@@ -1,0 +1,6 @@
+{
+  "name": "zst_local_oob.rs",
+  "category": "root",
+  "error_type": "out_of_bounds",
+  "error_message": "error: Undefined Behavior: memory access failed: attempting to access 1 byte, but got alloc2 which is at or beyond the end of the allocation of size 0 bytes"
+}

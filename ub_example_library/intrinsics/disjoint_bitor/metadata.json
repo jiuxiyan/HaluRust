@@ -1,0 +1,6 @@
+{
+  "name": "disjoint_bitor.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: `assume` called with `false`"
+}

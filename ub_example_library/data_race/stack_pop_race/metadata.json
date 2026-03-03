@@ -1,0 +1,6 @@
+{
+  "name": "stack_pop_race.rs",
+  "category": "data_race",
+  "error_type": "data_race",
+  "error_message": "error: Undefined Behavior: Data race detected between (1) non-atomic read on thread `unnamed-1` and (2) deallocation on thread `main` at alloc260"
+}

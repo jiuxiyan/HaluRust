@@ -1,0 +1,6 @@
+{
+  "name": "check_arg_count_too_few_args.rs",
+  "category": "function_calls",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: incorrect number of arguments for `malloc`: got 0, expected 1"
+}

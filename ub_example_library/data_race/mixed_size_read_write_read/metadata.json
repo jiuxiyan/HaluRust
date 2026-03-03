@@ -1,0 +1,6 @@
+{
+  "name": "mixed_size_read_write_read.rs",
+  "category": "data_race",
+  "error_type": "unknown",
+  "error_message": "error: aborting due to 1 previous error"
+}

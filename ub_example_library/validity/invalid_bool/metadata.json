@@ -1,0 +1,6 @@
+{
+  "name": "invalid_bool.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value: encountered 0x02, but expected a boolean"
+}

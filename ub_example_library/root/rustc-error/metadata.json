@@ -1,0 +1,6 @@
+{
+  "name": "rustc-error.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: aborting due to 1 previous error"
+}

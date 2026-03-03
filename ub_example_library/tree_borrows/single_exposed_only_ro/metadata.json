@@ -1,0 +1,6 @@
+{
+  "name": "single_exposed_only_ro.rs",
+  "category": "tree_borrows",
+  "error_type": "tree_borrows",
+  "error_message": "error: Undefined Behavior: write access through <wildcard> at alloc309[0x0] is forbidden"
+}

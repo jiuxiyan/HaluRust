@@ -1,0 +1,6 @@
+{
+  "name": "breakpoint.rs",
+  "category": "root",
+  "error_type": "unknown",
+  "error_message": "error: abnormal termination: trace/breakpoint trap"
+}

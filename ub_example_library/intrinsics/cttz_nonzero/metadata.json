@@ -1,0 +1,6 @@
+{
+  "name": "cttz_nonzero.rs",
+  "category": "intrinsics",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: `cttz_nonzero` called on 0"
+}

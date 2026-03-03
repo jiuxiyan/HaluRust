@@ -1,0 +1,6 @@
+{
+  "name": "wrong-dyn-trait.rs",
+  "category": "validity",
+  "error_type": "unknown",
+  "error_message": "error: Undefined Behavior: constructing invalid value: wrong trait in wide pointer vtable: expected `std::fmt::Debug`, but encountered `std::marker::Send`"
+}

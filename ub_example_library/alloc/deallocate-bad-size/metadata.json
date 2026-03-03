@@ -1,0 +1,6 @@
+{
+  "name": "deallocate-bad-size.rs",
+  "category": "alloc",
+  "error_type": "invalid_alignment",
+  "error_message": "error: Undefined Behavior: incorrect layout on deallocation: alloc380 has size 1 and alignment 1, but gave size 2 and alignment 1"
+}
