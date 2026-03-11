@@ -1,6 +1,6 @@
 # HaluRust
 
-LLM-based Rust Undefined Behavior (UB) auto-fixer, powered by Miri + Tree-sitter + GPT.
+LLM-based Rust Undefined Behavior (UB) auto-fixer, powered by Miri + Tree-sitter.
 
 ## Architecture
 

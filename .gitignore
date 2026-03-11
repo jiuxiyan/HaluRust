@@ -6,3 +6,10 @@ selected_tests.json
 miri_tests/
 miri_test_results/
 rag_build_progress.json
+RustAssistant.pdf
+RustBrain.pdf
+AkiraRust.pdf
+frameworkv2.png
+v2_batch_results/
+run_v2_batch.py
+pilot_study/

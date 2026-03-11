@@ -153,6 +153,11 @@ def main():
         max_iterations=3,
         temperature=0.3,
         miri_timeout=60,
+        num_candidates=1,  # single candidate for library building speed
+        enable_reflection=True,
+        enable_clippy=False,  # skip clippy during library building
+        enable_semantic_check=False,
+        enable_experience_accumulation=False,
     )
 
     pipeline = HaluRustPipeline(config)

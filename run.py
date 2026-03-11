@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CLI entry point for HaluRust: fix UB in Rust code using LLMs."""
+"""CLI entry point for HaluRust v2: fix UB in Rust code using LLMs."""
 
 import argparse
 import os
@@ -16,7 +16,7 @@ console = Console()
 
 def main():
     parser = argparse.ArgumentParser(
-        description="HaluRust: LLM-based Rust Undefined Behavior auto-fixer"
+        description="HaluRust v2: LLM-based Rust Undefined Behavior auto-fixer"
     )
     parser.add_argument("source", type=str, help="Path to the Rust source file with UB")
     parser.add_argument("test", type=str, help="Path to the Rust test file")
@@ -25,6 +25,22 @@ def main():
     parser.add_argument("--base-url", default=os.environ.get("OPENAI_BASE_URL", None))
     parser.add_argument("--max-iter", type=int, default=5)
     parser.add_argument("--output", "-o", type=str, help="Write fixed code to file")
+
+    # v2 options
+    parser.add_argument("--num-candidates", type=int, default=3,
+                        help="Number of fix candidates per iteration (beam search)")
+    parser.add_argument("--no-reflection", action="store_true",
+                        help="Disable Reflection Agent")
+    parser.add_argument("--no-clippy", action="store_true",
+                        help="Disable Clippy static analysis in Critic")
+    parser.add_argument("--no-semantic-check", action="store_true",
+                        help="Disable LLM semantic preservation check")
+    parser.add_argument("--no-hallucination", action="store_true",
+                        help="Disable Hallucination Agent")
+    parser.add_argument("--no-experience", action="store_true",
+                        help="Disable post-fix experience accumulation")
+    parser.add_argument("--score-threshold", type=float, default=0.4,
+                        help="Minimum composite score to keep a candidate")
 
     args = parser.parse_args()
 
@@ -40,6 +56,13 @@ def main():
         api_key=args.api_key,
         base_url=args.base_url,
         max_iterations=args.max_iter,
+        num_candidates=args.num_candidates,
+        score_threshold=args.score_threshold,
+        enable_reflection=not args.no_reflection,
+        enable_clippy=not args.no_clippy,
+        enable_semantic_check=not args.no_semantic_check,
+        enable_hallucination=not args.no_hallucination,
+        enable_experience_accumulation=not args.no_experience,
     )
 
     pipeline = HaluRustPipeline(config)

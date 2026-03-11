@@ -65,6 +65,11 @@ def run_batch(
         max_iterations=max_iterations,
         temperature=0.3,
         miri_timeout=60,
+        num_candidates=2,
+        enable_reflection=True,
+        enable_clippy=True,
+        enable_semantic_check=True,
+        enable_experience_accumulation=True,
     )
 
     pipeline = HaluRustPipeline(config)

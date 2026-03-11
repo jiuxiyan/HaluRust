@@ -81,6 +81,11 @@ def main():
         base_url=base_url,
         max_iterations=3,
         temperature=0.3,
+        num_candidates=2,  # fewer candidates for pilot study speed
+        enable_clippy=not use_mock,
+        enable_semantic_check=not use_mock,
+        enable_reflection=True,
+        enable_experience_accumulation=not use_mock,
     )
 
     argv_cases = [a for a in sys.argv[1:] if not a.startswith("--")]
